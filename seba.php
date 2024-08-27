@@ -4,8 +4,7 @@ $username = "tu_usuario"; // Cambia a tu nombre de usuario de MySQL
 $password = "tu_contraseña"; // Cambia a tu contraseña de MySQL
 $dbname = "tienda_online";
 
-// Crear la conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
+
 
 // Verificar la conexión
 if ($conn->connect_error) {
