@@ -1,14 +1,13 @@
 
-.card {
-    height: 100%; /* Asegura que la tarjeta ocupe todo el espacio disponible */
-    
-}
-
 .card-img-top {
-    width: 100%;
-    height: auto; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Hace que la imagen cubra todo el contenedor */
-}
+            width: 100%;
+            height: 100%; /* Asegura que la imagen cubra tanto el ancho como el alto del contenedor */
+            object-fit: cover; /* Mantiene la proporción de la imagen, recortando si es necesario */
+        }
+
+        .card {
+            height: 100%; /* Hace que la tarjeta ocupe todo el espacio disponible */
+        }
 
 
 
