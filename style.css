@@ -12,9 +12,8 @@ max-width: 200px;
 height: auto;
 }
 .container img:hover{
-transform: scale(2);
+max-width: 300%;
 }
-
 
 
 
