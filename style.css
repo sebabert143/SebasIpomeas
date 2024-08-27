@@ -1,9 +1,16 @@
 
+.card {
+    height: 100%; /* Asegura que la tarjeta ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+}
+
 .card-img-top {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Hace que la imagen cubra todo el contenedor */
 }
+
 
 
 
