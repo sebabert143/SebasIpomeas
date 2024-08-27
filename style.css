@@ -6,14 +6,18 @@
 
 
 
-
-
-
-
 .container img {
-  max-width: 270px; 
-  height: auto; 
+align-self: center;
+max-width: 200px;
+height: auto;
 }
+.container img:hover{
+transform: scale(2);
+}
+
+
+
+
 
 .banerinfo  {
   background-color: #E8B0E0;
