@@ -342,13 +342,5 @@ position: absolute;
     align-items: center;
 }
 
-.footer a {
-    color: #ff6ec7;
-    text-decoration: none;
-    margin: 5px;
-}
 
-.footer a:hover {
-    text-decoration: underline;
-}
 
