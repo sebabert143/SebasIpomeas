@@ -252,7 +252,7 @@ background-color: #fff;
   border-radius: 50px;
   text-decoration: none;
   transition: 0.3s background-color;
-  margin-right: 10px; /* Ajusta el valor para separar el login del menú hamburguesa */
+  
   
  
 }
@@ -261,12 +261,12 @@ background-color: #fff;
   background-color: #d58cfc;
   }
 
-.navbar-togger {
+.navbar-toggler {
 border: none;
 font-size: 1.25rem;  
 }
 
-.navbar-togger:focus, .btn-close:focus {
+.navbar-toggler:focus, .btn-close:focus {
 box-shadow: none;
   outline: none;
   
@@ -343,33 +343,6 @@ position: absolute;
     flex-direction: column;
     align-items: center;
 }
-
-
-/* Ocultar íconos y mostrar el menú hamburguesa en pantallas más pequeñas */
-@media (max-width: 1200px) {
-  .corazon, .carrito {
-    display: none;
-  }
-}
-
-@media (max-width: 992px) {
-  .search-container {
-    display: none;
-  }
-
-  .navbar-toggler {
-    display: block !important; /* Asegura que el botón hamburguesa se muestre */
-  }
-}
-
-/* Ocultar íconos de la barra de navegación en pantallas más pequeñas */
-@media (max-width: 1200px) {
-  .corazon, .carrito, .search-container {
-    display: none; /* Ocultar íconos en la barra de navegación */
-  }
-}
-
-
 
 
 
