@@ -346,18 +346,15 @@ position: absolute;
 
 
 
-/* Mostrar el menú hamburguesa en pantallas más pequeñas (menor a 1200px) */
-@media (max-width: 1200px) {
-  .navbar-toggler {
-    display: block !important; /* Asegura que el botón hamburguesa se muestre */
-  }
-}
 
+
+@media (max-width: 768px) {
 @media (max-width: 1200px) {
   .corazon,
   .carrito,
   .search-container {
-    display: none; /* Oculta los íconos en la barra de navegación */
+    display: none; /* Oculta los íconos en pantallas menores a 768px */
+    display: none; /* Oculta los íconos en pantallas menores a 1200px */
   }
 }
 
