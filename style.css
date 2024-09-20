@@ -12,7 +12,7 @@
     
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
     transition: box-shadow 0.3s ease-in-out; /* Transición suave al pasar el mouse */
-    border-radius: 30px; /* Aumenté el redondeo de los bordes */
+    border-radius: 30px !important;
     overflow: hidden; /* Asegura que las imágenes se ajusten al borde redondeado */
 }
 
