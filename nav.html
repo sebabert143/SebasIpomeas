@@ -1,15 +1,9 @@
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand me-auto" href="#">
       <img src="https://i.imgur.com/CrQJBAJ.png" alt="Logo" class="logoipomea">
     </a>
-
-    <!-- Menú hamburguesa -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Contenido colapsable del menú hamburguesa -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ipomea Paradise</h5>
@@ -27,7 +21,7 @@
             <a class="nav-link mx-lg-2" href="#">Germinado</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Ornamentación</a>
+            <a class="nav-link mx-lg-2" href="#">Ornamentacion</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="#">Nosotros</a>
@@ -37,31 +31,45 @@
           </li>
         </ul>
 
-        <!-- Íconos dentro del offcanvas -->
-        <div class="d-flex flex-column align-items-center">
-          <div class="search-container my-2">
-            <button class="btn btn-outline-success boton-lupa" type="button">
-              <i class="bi bi-search"></i>
+        <div class="search-container">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success boton-lupa" type="submit">
+              <span class="material-symbols-outlined">
+                search
+              </span>
             </button>
-          </div>
-          <div class="corazon my-2">
-            <button class="btn btn-outline-success" type="button">
-              <i class="bi bi-heart-fill"></i>
-            </button>
-          </div>
-          <div class="carrito my-2">
-            <button class="btn btn-outline-success" type="button">
-              <i class="bi bi-cart"></i>
-            </button>
-          </div>
+          </form>
         </div>
+        <br>
+        <div class="corazon">
+          <button class="btn btn-outline-success" type="submit">
+            <span class="material-symbols-outlined">
+              favorite
+            </span>
+          </button>
+        </div>
+        <br>
+
+        <div class="carrito">
+          <button class="btn btn-outline-success" type="submit">
+            <span class="material-symbols-outlined">
+              shopping_cart
+            </span>
+          </button>
+        </div>
+
+
       </div>
     </div>
-
-    <!-- Botón de login -->
     <a href="login.html" class="login-button">Login</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
 </nav>
+<!-- End Navbar -->
 
 
   
