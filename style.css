@@ -11,10 +11,12 @@
     width: 18rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
     transition: box-shadow 0.3s ease-in-out; /* Transición suave al pasar el mouse */
+                    border-radius: 20px; /* Bordes redondeados más pronunciados */
 }
 
 .card:hover {
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5); /* Sombra aún más fuerte al pasar el mouse */
+            border-radius: 20px; /* Mantener los bordes redondeados al hacer hover */
 }
 
 
