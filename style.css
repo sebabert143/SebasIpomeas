@@ -28,6 +28,10 @@ border-radius: 15px;
 transform: scale(2);
 }
 
+.container {
+    text-align: center; /* Centra el contenido inline-block */
+}
+
 
 
 .destacadoscaja {
