@@ -28,15 +28,13 @@ border-radius: 15px;
 transform: scale(2);
 }
 
-.containerok {
-    text-align: center; /* Centra el contenido inline-block */
-}
+
 
 .destacadoscaja {
     position: relative; /* Necesario para el posicionamiento del pseudoelemento */
     padding: 20px;
     z-index: 1;
-            display: inline-block; /* El div se adapta al tamaño del contenido */
+
 }
 
 .destacadoscaja::before {
