@@ -38,6 +38,7 @@ transform: scale(2);
     position: relative; /* Necesario para el posicionamiento del pseudoelemento */
     padding: 20px;
     z-index: 1;
+    text-align: center;
 
 }
 
