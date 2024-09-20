@@ -362,6 +362,23 @@ position: absolute;
   }
 }
 
+/* Ocultar íconos de la barra de navegación en pantallas más pequeñas */
+@media (max-width: 1200px) {
+  .corazon, .carrito, .search-container {
+    display: none; /* Ocultar íconos en la barra de navegación */
+  }
+}
+
+/* Mostrar los íconos dentro del menú hamburguesa */
+@media (max-width: 1200px) {
+  .offcanvas .corazon, 
+  .offcanvas .carrito, 
+  .offcanvas .search-container {
+    display: block; /* Asegurar que se muestren en el offcanvas */
+    margin: 10px 0; /* Separar los íconos dentro del menú hamburguesa */
+  }
+}
+
 
 
 
