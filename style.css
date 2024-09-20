@@ -351,7 +351,7 @@ position: absolute;
   .corazon,
   .carrito,
   .search-container {
-    display: block; /* Muestra los íconos dentro del offcanvas cuando el menú hamburguesa se despliega */
+   
     margin: 10px 0; /* Añadir espacio entre los íconos si es necesario */
   }
 }
