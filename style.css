@@ -24,9 +24,12 @@ max-width: 200px;
 height: auto;
 border-radius: 15px;
 }
-.container img:hover{
-transform: scale(2);
+
+.container img:hover {
+    transform: scale(1.2); /* Ajusta el valor de escala para reducir el tamaño al pasar el mouse */
+    transition: transform 0.3s ease-in-out; /* Añade una transición suave para el cambio de tamaño */
 }
+
 
 .container {
     text-align: center; /* Centra el contenido inline-block */
