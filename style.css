@@ -14,10 +14,12 @@
     transition: box-shadow 0.3s ease-in-out; /* Transición suave al pasar el mouse */
     border-radius: 30px !important;
     overflow: hidden; /* Asegura que las imágenes se ajusten al borde redondeado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para la escala y la sombra */
 }
 
 .card:hover {
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5); /* Sombra más fuerte al pasar el mouse */
+            transform: scale(1.05); /* Aumenta el tamaño al 105% */
 }
 
 
