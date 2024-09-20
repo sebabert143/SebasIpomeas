@@ -2,6 +2,7 @@
 
 
 .card-img-top {
+            width: 18rem;
             width: 100%;
             height: auto; /* Mantiene la proporción de la imagen */
             object-fit: cover; /* Asegura que la imagen cubra el contenedor si es necesario */
