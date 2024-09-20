@@ -344,25 +344,28 @@ position: absolute;
     align-items: center;
 }
 
-/* Desaparecer primero el corazón y carrito a partir de 1200px */
-@media (max-width: 1200px) {
-  .corazon,
-  .carrito {
-    display: none; /* Oculta el corazón y carrito */
-  }
-}
 
-/* Desaparecer la lupita a partir de 992px */
-@media (max-width: 1200px) {
-  .search-container {
-    display: none; /* Oculta la lupita */
-  }
-}
 
 /* Mostrar el menú hamburguesa en pantallas más pequeñas (menor a 1200px) */
 @media (max-width: 1200px) {
   .navbar-toggler {
     display: block !important; /* Asegura que el botón hamburguesa se muestre */
+  }
+}
+
+.offcanvas .corazon, 
+.offcanvas .carrito, 
+.offcanvas .search-container {
+  margin: 10px 0; /* Espacio entre los íconos */
+  display: block; /* Asegura que se muestren en línea */
+}
+
+/* Asegura que los botones no se oculten */
+@media (max-width: 1200px) {
+  .corazon,
+  .carrito,
+  .search-container {
+    display: block; /* Se aseguran de que los íconos estén visibles dentro del menú hamburguesa */
   }
 }
 
