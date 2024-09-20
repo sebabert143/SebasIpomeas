@@ -1,75 +1,45 @@
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand me-auto" href="#">
-      <img src="https://i.imgur.com/CrQJBAJ.png" alt="Logo" class="logoipomea">
-    </a>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ipomea Paradise</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Variedades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Germinado</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Ornamentacion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Contacto</a>
-          </li>
-        </ul>
+    <!-- Logo del sitio -->
+    <a class="navbar-brand" href="#">MiLogo</a>
 
-        <div class="search-container">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success boton-lupa" type="submit">
-              <span class="material-symbols-outlined">
-                search
-              </span>
-            </button>
-          </form>
-        </div>
-        <br>
-        <div class="corazon">
-          <button class="btn btn-outline-success" type="submit">
-            <span class="material-symbols-outlined">
-              favorite
-            </span>
-          </button>
-        </div>
-        <br>
-
-        <div class="carrito">
-          <button class="btn btn-outline-success" type="submit">
-            <span class="material-symbols-outlined">
-              shopping_cart
-            </span>
-          </button>
-        </div>
-
-
-      </div>
-    </div>
-    <a href="login.html" class="login-button">Login</a>
+    <!-- Botón menú hamburguesa -->
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
       aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Contenido del menú hamburguesa -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <!-- Enlaces de navegación -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <!-- Íconos que deben aparecer dentro del menú hamburguesa -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-search"></i> Buscar</a> <!-- Ícono lupita -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-heart-fill"></i> Favoritos</a> <!-- Ícono corazón -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-cart"></i> Carrito</a> <!-- Ícono carrito -->
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </nav>
-<!-- End Navbar -->
+
 
 
   
