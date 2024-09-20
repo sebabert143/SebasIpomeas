@@ -305,12 +305,11 @@ position: absolute;
   }
 
 .divdestacados {
-    display: inline-block; /* El div se adapta al tamaño del contenido */
-    padding: 10px; /* Agrega un poco de espacio alrededor del texto */
-    background-color: #f0f0f0; /* Color de fondo del div */
-    border-radius: 15px; /* Bordes redondeados */
-    border: 2px solid #ccc; /* Borde opcional */
-
- display: inline-block; /* El div se adapta al tamaño del contenido */
-}
+    text-align: center; /* Asegura que el texto dentro del div esté centrado */
+    margin: 0 auto; /* Centra el div en sí mismo */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    display: block; /* Cambiar de inline-block a block para evitar que afecte el centrado */
 }
