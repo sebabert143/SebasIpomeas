@@ -351,7 +351,7 @@ position: absolute;
   .corazon,
   .carrito,
   .search-container {
-    display: none; /* Oculta los íconos en la barra de navegación */
+    
   }
 }
 
