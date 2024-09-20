@@ -28,6 +28,15 @@ border-radius: 15px;
 transform: scale(2);
 }
 
+.destacadoscaja {
+    background-image: url('URL_DE_TU_IMAGEN'); /* Aquí va la URL de tu imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda el área del div */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px; /* Añade algo de padding para que el contenido no esté pegado a los bordes */
+}
+
+
 
 
 
