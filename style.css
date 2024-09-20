@@ -296,3 +296,11 @@ position: absolute;
   left: 0;
   
   }
+
+.text-box {
+    display: inline-block; /* El div se adapta al tamaño del contenido */
+    padding: 10px; /* Agrega un poco de espacio alrededor del texto */
+    background-color: #f0f0f0; /* Color de fondo del div */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 2px solid #ccc; /* Borde opcional */
+}
