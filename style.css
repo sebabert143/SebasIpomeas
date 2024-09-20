@@ -350,7 +350,11 @@ position: absolute;
   }
 }
 
-
+/* Desaparecer la lupita en pantallas menores a 1200px */
+@media (max-width: 1200px) {
+  .search-container {
+    display: none; /* Oculta la lupita */
+  }
 
   /* Asegurarse de que el menú hamburguesa siga visible */
   .navbar-toggler {
