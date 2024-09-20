@@ -245,7 +245,7 @@ background-color: #fff;
   border-radius: 50px;
   text-decoration: none;
   transition: 0.3s background-color;
-  
+  margin-right: 15px; /* Añadimos este margen para separar del menú hamburguesa */
   
  
 }
