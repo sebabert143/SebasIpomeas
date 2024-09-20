@@ -342,11 +342,11 @@ position: absolute;
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .corazon,
   .carrito,
   .search-container {
-    display: none; /* Oculta los íconos en pantallas menores a 768px */
+    display: none; /* Oculta los íconos en pantallas menores a 1200px */
   }
 }
 
