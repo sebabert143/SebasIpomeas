@@ -181,60 +181,8 @@
     <input class="form-control me-2" type="search" name="query" placeholder="Buscar productos" aria-label="Search">
     <button class="btn btn-outline-success" type="submit">Buscar</button>
 </form>
-<!-- musicakaty -->
-<audio id="background-audio" loop>
-  <source src="musica/katytema.mp3" type="audio/mpeg">
-  Tu navegador no soporta la reproducción de audio.
-</audio>
 
-<button onclick="document.getElementById('background-audio').play();">Reproducir Música</button>
-<button onclick="document.getElementById('background-audio').pause();">Pausar Música</button>
-<br><br>
-
-    <input type="range" id="seek-bar" value="0" max="100" step="1" oninput="moverSlider(this.value)" onchange="moverSlider(this.value)">
-    
-    <script>
-        var audio = document.getElementById('background-audio');
-        var seekBar = document.getElementById('seek-bar');
-
-        // Actualiza el slider mientras se reproduce el audio
-        audio.addEventListener('timeupdate', function() {
-            var value = (audio.currentTime / audio.duration) * 100;
-            seekBar.value = value;
-        });
-
-        // Mover el slider adelanta o retrocede el audio
-        function moverSlider(value) {
-            var time = (value / 100) * audio.duration;
-            audio.currentTime = time;
-        }
-
-        function cambiarVolumen(value) {
-        var audio = document.getElementById('background-audio');
-        audio.volume = value / 100;
-    }
-    </script>
-
-<input type="range" id="volume-control" value="100" max="100" step="1" oninput="cambiarVolumen(this.value)" onchange="cambiarVolumen(this.value)">
-
-<script>
-    
-</script>
-
-    <!-- musicakaty -->
-     <!-- videoipomea -->
-
-    <video id="my-video" width="640" height="360" controls>
-      <source src="video/ipomeavideo.mp4" type="video/mp4">
-      Tu navegador no soporta la reproducción de video.
-  </video>
-
-  <!-- videoipomea -->
-  
-
-
-
-  <div class="destacadoscaja">
+<div class="destacadoscaja">
     <h1 class="text-center">Destacados jajaja!</h1>
     <br>
     
