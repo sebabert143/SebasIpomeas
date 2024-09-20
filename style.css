@@ -353,21 +353,25 @@ position: absolute;
   }
 }
 
-.offcanvas .corazon, 
-.offcanvas .carrito, 
-.offcanvas .search-container {
-  margin: 10px 0; /* Espacio entre los íconos */
-  display: block; /* Asegura que se muestren en línea */
-}
-
-/* Asegura que los botones no se oculten */
 @media (max-width: 1200px) {
   .corazon,
   .carrito,
   .search-container {
-    display: block; /* Se aseguran de que los íconos estén visibles dentro del menú hamburguesa */
+    display: none; /* Oculta los íconos en la barra de navegación */
   }
 }
+
+/* Mostrar los íconos dentro del menú hamburguesa en pantallas pequeñas */
+@media (max-width: 1200px) {
+  .offcanvas .corazon,
+  .offcanvas .carrito,
+  .offcanvas .search-container {
+    display: block; /* Muestra los íconos dentro del offcanvas cuando el menú hamburguesa se despliega */
+    margin: 10px 0; /* Añadir espacio entre los íconos si es necesario */
+  }
+}
+
+
 
 
 
