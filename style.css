@@ -303,4 +303,5 @@ position: absolute;
     background-color: #f0f0f0; /* Color de fondo del div */
     border-radius: 15px; /* Bordes redondeados */
     border: 2px solid #ccc; /* Borde opcional */
+            text-align: center;
 }
