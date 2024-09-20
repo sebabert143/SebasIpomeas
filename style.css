@@ -337,11 +337,11 @@ position: absolute;
     align-items: center;
 }
 
-/* Desaparecer el corazón y el carrito en pantallas menores a 1400px */
 @media (max-width: 1400px) {
   .corazon, 
-  .carrito {
-    display: none; /* Oculta el corazón y carrito */
+  .carrito, 
+  .search-container {
+    display: none; /* Oculta el corazón, carrito y lupita */
   }
   
   /* Mostrar el menú hamburguesa cuando desaparezcan los íconos */
@@ -350,11 +350,7 @@ position: absolute;
   }
 }
 
-/* Desaparecer la lupita en pantallas menores a 1200px */
-@media (max-width: 1200px) {
-  .search-container {
-    display: none; /* Oculta la lupita */
-  }
+
 
   /* Asegurarse de que el menú hamburguesa siga visible */
   .navbar-toggler {
