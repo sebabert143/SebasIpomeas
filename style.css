@@ -342,5 +342,14 @@ position: absolute;
     align-items: center;
 }
 
+@media (max-width: 768px) {
+  .corazon,
+  .carrito,
+  .search-container {
+    display: none; /* Oculta los íconos en pantallas menores a 768px */
+  }
+}
+
+
 
 
