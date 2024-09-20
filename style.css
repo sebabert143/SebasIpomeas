@@ -7,7 +7,7 @@
             object-fit: cover; /* Asegura que la imagen cubra el contenedor si es necesario */
         }
 
-        .card {
+.card {
     width: 18rem; /* Ancho de la tarjeta */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
     transition: box-shadow 0.3s ease-in-out; /* Transición suave al pasar el mouse */
