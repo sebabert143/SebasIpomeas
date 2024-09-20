@@ -1,4 +1,4 @@
-<!-- Navbar -->
+<!-- Navbar sin botón "Home" -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand me-auto" href="#">
@@ -11,6 +11,7 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <!-- Botones del menú sin Home -->
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="#">Variedades</a>
           </li>
@@ -18,7 +19,7 @@
             <a class="nav-link mx-lg-2" href="#">Germinado</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Ornamentacion</a>
+            <a class="nav-link mx-lg-2" href="#">Ornamentación</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="#">Nosotros</a>
@@ -28,37 +29,34 @@
           </li>
         </ul>
 
+        <!-- Botones de búsqueda, carrito y favoritos -->
         <div class="search-container">
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success boton-lupa" type="submit">
-              <span class="material-symbols-outlined">
-                search
-              </span>
+              <span class="material-symbols-outlined">search</span>
             </button>
           </form>
         </div>
         <br>
         <div class="corazon">
           <button class="btn btn-outline-success" type="submit">
-            <span class="material-symbols-outlined">
-              favorite
-            </span>
+            <span class="material-symbols-outlined">favorite</span>
           </button>
         </div>
         <br>
-
         <div class="carrito">
           <button class="btn btn-outline-success" type="submit">
-            <span class="material-symbols-outlined">
-              shopping_cart
-            </span>
+            <span class="material-symbols-outlined">shopping_cart</span>
           </button>
         </div>
       </div>
     </div>
 
+    <!-- Login -->
     <a href="login.html" class="login-button">Login</a>
+    
+    <!-- Botón del menú hamburguesa -->
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
       aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -66,3 +64,4 @@
   </div>
 </nav>
 <!-- End Navbar -->
+
