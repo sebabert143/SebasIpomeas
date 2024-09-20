@@ -351,19 +351,11 @@ position: absolute;
   .corazon,
   .carrito,
   .search-container {
-    
-  }
-}
-
-/* Mostrar los íconos dentro del menú hamburguesa en pantallas pequeñas */
-@media (max-width: 1200px) {
-  .offcanvas .corazon,
-  .offcanvas .carrito,
-  .offcanvas .search-container {
     display: block; /* Muestra los íconos dentro del offcanvas cuando el menú hamburguesa se despliega */
     margin: 10px 0; /* Añadir espacio entre los íconos si es necesario */
   }
 }
+
 
 
 
