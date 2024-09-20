@@ -311,5 +311,5 @@ position: absolute;
     background-color: #f0f0f0;
     border-radius: 15px;
     border: 2px solid #ccc;
-    display: block; /* Cambiar de inline-block a block para evitar que afecte el centrado */
+    display: inline-block; /* Cambiar de inline-block a block para evitar que afecte el centrado */
 }
