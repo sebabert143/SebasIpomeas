@@ -100,8 +100,9 @@ border-radius: 15px;
 .carousel-control-prev .material-symbols-outlined,
 .carousel-control-next .material-symbols-outlined {
   font-size: 60px; 
-   color: #white;
+  color: white; /* Cambiado de #white a solo 'white' */
 }
+
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -343,12 +344,6 @@ position: absolute;
     flex-direction: column;
     align-items: center;
 }
-
-
-
-
-
-
 
 
 
