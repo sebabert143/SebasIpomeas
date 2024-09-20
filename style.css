@@ -369,15 +369,7 @@ position: absolute;
   }
 }
 
-/* Mostrar los íconos dentro del menú hamburguesa */
-@media (max-width: 1200px) {
-  .offcanvas .corazon, 
-  .offcanvas .carrito, 
-  .offcanvas .search-container {
-    display: block; /* Asegurar que se muestren en el offcanvas */
-    margin: 10px 0; /* Separar los íconos dentro del menú hamburguesa */
-  }
-}
+
 
 
 
