@@ -337,7 +337,7 @@ position: absolute;
     align-items: center;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .corazon, 
   .carrito, 
   .search-container {
