@@ -47,6 +47,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
   
     // Si hay errores, prevenir el envío del formulario
     if (!isValid) {
+        window.location.href = 'https://jmgvines.com/';
+  } else {
       event.preventDefault();
     }
   });
