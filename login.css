@@ -4,6 +4,8 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+  margin: 0;
+  padding: 0;
   
 }
 
@@ -34,6 +36,20 @@ width: 28%;
     background-color: #c263f9; 
     color: #ffffff; 
     border: none; 
+}
+
+.container {
+  flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative; /* Si el contenido es mayor, se ajusta */
+  bottom: 0; /* Asegura que el footer se quede abajo */
 }
 
 
