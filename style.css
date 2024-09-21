@@ -356,12 +356,7 @@ position: absolute;
     display: none; /* Esconder el menú hamburguesa en pantallas grandes */
   }
 
-  .corazon, 
-  .carrito, 
-  .search-container {
-    display: inline-block; /* Mostrar los íconos de nuevo */
-  }
-}
+ 
 
 
 
