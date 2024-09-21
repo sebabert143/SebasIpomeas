@@ -10,3 +10,4 @@ fetch('nav.html')
     document.getElementById('navbar-placeholder').innerHTML = data; 
 });
 
+
