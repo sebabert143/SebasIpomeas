@@ -352,6 +352,125 @@ position: absolute;
 
 
 
+.hidden {
+  display: none; /* Oculta elementos */
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* Asegura que esté por encima de todo al cargar */
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #1fff39; 
+  border-top: 5px solid #2e34f5; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Animación de giro */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ad-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101; /* Justo por debajo del loading screen */
+}
+
+.ad-content {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+  border: 2px solid #fff;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: white;
+  font-size: 32px;
+  border: none;
+  cursor: pointer;
+  z-index: 102;
+}
+
+
+
+
+/* Estilo del pop-up */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 102;
+}
+
+.popup-content {
+  text-align: center;
+  color: black;
+  background-color: #fbff29; 
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.popup-image {
+  max-width: 100%; 
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Estilo del banner de cookies */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background-color: rgb(183, 1, 1, 0.8); 
+  color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 104;
+}
+
+.cookie-banner button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 
 
 

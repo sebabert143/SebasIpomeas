@@ -20,9 +20,39 @@
 
 <body>
  
+  <!-- circulo de carga que aparece al inicio -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="circle"></div>
+</div>
+
+<!-- Publicidad de Kim Petras de 5 segundos -->
+<div id="adScreen" class="ad-screen" style="display: none;">
+    <div class="ad-content">
+        <img src="imagenes/kim.png" alt="Publicidad de Kim Petras" class="ad-image">
+        <p>¿Ya escuchaste la nueva canción de Kim Petras? Disponible en Spotify - La página estará disponible en <span id="countdown">5</span> segundos</p>
+        <!-- Botón para cerrar la publicidad -->
+        <button id="closeAd" class="close hidden">&times;</button>
+    </div>
+</div>
+
+ <!-- Pop-up del Sweat Tour que aparece 10 segundos después de cerrar la publicidad -->
+ <div id="popupScreen" class="popup" style="display: none;">
+  <div class="popup-content">
+      <img src="imagenes/sweattour.jpg" alt="Imagen del pop-up" class="popup-image">
+      <h2>Charli XCX y Troye Sivan nos harán entrar en calor con este nuevo tour. ¡No te lo pierdas!</h2>
+      <a href="https://www.sweat-tour.com/" target="_blank" class="popup-link">Click aquí para obtener tickets</a>
+      <!-- Botón para cerrar el pop-up -->
+      <button id="closePopup" class="close">&times;</button>
+  </div>
+</div>
+
+<!-- Cookies que aparecen cuando se scrollea por debajo de la mitad de la pagina -->
+<div id="cookieBanner" class="cookie-banner hidden">
+  <p>Este sitio usa cookies para mejorar la experiencia. <button id="acceptCookies">Aceptar Cookies</button></p>
+</div>
   
 
-  
+<div id="pageContent">
   <!-- Navbar -->
   
   <div id="nav-placeholder">
@@ -222,6 +252,8 @@ Estas hermosas pequeñas flores amarillas brillantes dejan atónito al observado
         
     </div>
 
+  </div>
+
 
 
 
@@ -230,6 +262,7 @@ Estas hermosas pequeñas flores amarillas brillantes dejan atónito al observado
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
     <script src="ipomea.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
