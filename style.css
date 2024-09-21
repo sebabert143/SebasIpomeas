@@ -350,11 +350,7 @@ position: absolute;
   }
 }
 
-/* En pantallas más grandes, ocultar el menú hamburguesa */
-@media (min-width: 1201px) {
-  .navbar-toggler {
-    display: none; /* Esconder el menú hamburguesa en pantallas grandes */
-  }
+
 
  
 
