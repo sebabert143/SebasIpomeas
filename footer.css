@@ -1,0 +1,45 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    font-size: 0.9rem;
+}
+
+.footer h5, .footer h6 {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+.footer .form-control {
+    border-radius: 20px;
+    max-width: 250px;
+}
+
+.footer .btn-primary {
+    border-radius: 20px;
+    background-color: #ffc107;
+    border: none;
+    color: #333;
+}
+
+.footer .btn-primary:hover {
+    background-color: #ff9800;
+    color: white;
+}
