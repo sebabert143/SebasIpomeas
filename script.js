@@ -125,3 +125,12 @@ function enviarEncuesta() {
 
 
 // final encuesta
+
+// carrousel categorias
+
+
+
+
+
+
+// carrousel categorias
