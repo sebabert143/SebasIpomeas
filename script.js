@@ -15,11 +15,11 @@ window.addEventListener('DOMContentLoaded', function() {
         loadingScreen.style.display = 'none';  // Ocultar pantalla de carga
         adScreen.style.display = 'flex';  // Mostrar publicidad
         startCountdown();  // Iniciar cuenta regresiva de la publicidad
-    }, 3000);
+    }, 1000);
 
     // Cuenta regresiva de 5 segundos para la publicidad de Kim
     function startCountdown() {
-        let timeLeft = 5;
+        let timeLeft = 1;
         const countdownInterval = setInterval(function() {
             countdown.textContent = timeLeft;
             timeLeft--;

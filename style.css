@@ -57,11 +57,11 @@ border-radius: 15px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('imagenes/fondo2.webp'); /* Ruta de la imagen */
+    background-image: url('imagenes/ipoblanca.webp'); /* Ruta de la imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.4; /* Controla la opacidad aquí, ajusta según lo que desees */
+    opacity:  /* Controla la opacidad aquí, ajusta según lo que desees */
     z-index: -1; /* Envía el fondo detrás del contenido */
 }
 
