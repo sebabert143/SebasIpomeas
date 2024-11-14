@@ -66,3 +66,62 @@ window.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = 'auto';  // Desbloquear scroll
     });
 });
+
+
+
+// encuesta
+document.addEventListener("DOMContentLoaded", function() {
+    const checkboxes = document.querySelectorAll(".color-checkbox");
+    const mensajeError = document.getElementById("mensaje-error");
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener("change", () => {
+            const seleccionados = document.querySelectorAll(".color-checkbox:checked").length;
+
+            if (seleccionados > 3) {
+                mensajeError.textContent = "¡Solo puedes seleccionar hasta 3 colores!";
+                mensajeError.style.display = "block";
+                checkbox.checked = false;
+            } else if (seleccionados < 3) {
+                mensajeError.textContent = "Selecciona exactamente 3 colores antes de enviar.";
+                mensajeError.style.display = "block";
+            } else {
+                mensajeError.style.display = "none";
+            }
+        });
+    });
+});
+
+function validarFormulario() {
+    const seleccionados = document.querySelectorAll(".color-checkbox:checked").length;
+    if (seleccionados !== 3) {
+        document.getElementById("mensaje-error").textContent = "Selecciona exactamente 3 colores.";
+        document.getElementById("mensaje-error").style.display = "block";
+        return false;
+    }
+    return true;
+}
+
+
+function enviarEncuesta() {
+    const seleccionados = document.querySelectorAll(".color-checkbox:checked").length;
+    const mensajeError = document.getElementById("mensaje-error");
+    const mensajeExito = document.getElementById("mensaje-exito");
+
+    // Verifica si se seleccionan exactamente 3 opciones
+    if (seleccionados !== 3) {
+        mensajeError.textContent = "Selecciona exactamente 3 colores antes de enviar.";
+        mensajeError.style.display = "block";
+        mensajeExito.style.display = "none"; // Oculta el mensaje de éxito si hay un error
+        return false; // Evita que el formulario se envíe
+    } else {
+        mensajeError.style.display = "none"; // Oculta el mensaje de error
+        mensajeExito.style.display = "block"; // Muestra el mensaje de éxito
+        document.getElementById("encuesta-form").reset(); // Resetea el formulario
+        return false; // Evita el envío del formulario para que el mensaje permanezca visible
+    }
+}
+
+
+
+// final encuesta
