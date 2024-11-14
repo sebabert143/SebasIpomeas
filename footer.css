@@ -1,8 +1,14 @@
 .footer {
-    background-color: #333;
+    background: linear-gradient(135deg, #6a0dad, #d28aff); /* Degradado de lila oscuro a un tono lila claro */
     color: white;
     padding: 40px 0;
     font-size: 0.9rem;
+}
+
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
 }
 
 .footer h5, .footer h6 {
@@ -20,7 +26,7 @@
     color: #fff;
 }
 
-.footer .social-icons a {
+.footer .social-icons a, .footer .contact-info {
     display: inline-block;
     margin-right: 10px;
     color: #ccc;
@@ -43,3 +49,4 @@
     background-color: #ff9800;
     color: white;
 }
+
