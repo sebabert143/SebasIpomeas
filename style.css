@@ -447,7 +447,7 @@ position: absolute;
 }
 
 @media (max-width: 768px) {
-  .close {
+  .close .hidden {
     top: 5px;
     right: 5px; /* Más cerca del contenido en dispositivos móviles */
     font-size: 1.2rem; /* Reduce el tamaño */
@@ -455,7 +455,7 @@ position: absolute;
 }
 
 @media (max-width: 480px) {
-  .close {
+  .close .hidden {
     top: 5px;
     right: 5px;
     font-size: 1rem; /* Tamaño más pequeño en pantallas muy pequeñas */
@@ -913,7 +913,7 @@ color: #ffffff;
     font-size: 0.9rem; /* Ajuste del texto */
   }
 
-  .close {
+  .close .hidden {
     font-size: 1.5rem; /* Más pequeño en pantallas medianas */
   }
 
@@ -929,7 +929,7 @@ color: #ffffff;
     font-size: 0.8rem; /* Texto más pequeño */
   }
 
-  .close {
+  .close .hidden {
     font-size: 1.2rem; /* Tamaño mínimo */
   }
 
