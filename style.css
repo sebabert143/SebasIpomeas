@@ -368,25 +368,50 @@ position: absolute;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100; /* Asegura que esté por encima de todo al cargar */
+  z-index: 100;
 }
 
 .circle {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #1fff39; 
-  border-top: 5px solid #2e34f5; 
+  width: 10vw; /* Adaptable al tamaño de la pantalla */
+  height: 10vw; /* Mantiene proporción circular */
+  max-width: 100px; /* Tamaño máximo para pantallas grandes */
+  max-height: 100px;
+  border: 5px solid #1fff39;
+  border-top: 5px solid #2e34f5;
   border-radius: 50%;
-  animation: spin 1s linear infinite; /* Animación de giro */
+  animation: spin 1s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .circle {
+    width: 15vw;
+    height: 15vw;
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .circle {
+    width: 20vw;
+    height: 20vw;
+    max-width: 60px;
+    max-height: 60px;
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .ad-screen {
@@ -399,28 +424,63 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 101; /* Justo por debajo del loading screen */
+  z-index: 101;
 }
 
 .ad-content {
   text-align: center;
   color: white;
-  font-size: 24px;
+  font-size: 1.2rem;
   padding: 20px;
   border: 2px solid #fff;
-  position: relative;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo con opacidad */
+  border-radius: 15px;
+  width: 80%; /* Ancho máximo responsivo */
+  max-width: 500px; /* Limita el ancho en pantallas grandes */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para realce */
 }
 
 .close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   background-color: transparent;
   color: white;
-  font-size: 32px;
+  font-size: 2rem;
   border: none;
   cursor: pointer;
   z-index: 102;
+}
+
+@media (max-width: 768px) {
+  .ad-content {
+    width: 90%;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .ad-image {
+    max-width: 250px;
+  }
+
+  #countdown {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ad-content {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  .ad-image {
+    max-width: 200px;
+  }
+
+  #countdown {
+    font-size: 1rem;
+  }
 }
 
 
@@ -811,6 +871,19 @@ position: absolute;
 font-family: 'Playfair Display', serif;
 font-weight: 700; /* Puedes ajustar el peso si prefieres un estilo diferente */
 color: #ffffff;
+}
+
+.ad-image {
+  width: 100%;
+  max-width: 300px; /* Limita el tamaño de la imagen */
+  height: auto; /* Mantiene proporción */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 15px; /* Espaciado inferior */
+}
+
+#countdown {
+  font-size: 1.5rem;
+  color: #ffd700; /* Color dorado para destacar */
 }
 
 

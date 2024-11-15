@@ -1,11 +1,5 @@
 /* Fondo degradado más intenso */
-body {
-    background: linear-gradient(135deg, #f8bbd0 0%, #ce93d8 40%, #b39ddb 70%, #ffffff 100%);
-    background-attachment: fixed;
-    padding: 20px;
-    color: #333;
-    font-family: 'Playfair Display', serif; /* Asegúrate de tener esta fuente enlazada en el <head> de tu HTML */
-}
+
 
 /* Estilo para el título principal */
 header h1 {
@@ -73,6 +67,18 @@ header h1 {
     .intro p {
         font-size: 1rem;
     }
+}
+
+.main-content {
+    background: linear-gradient(135deg, #f8bbd0 0%, #ce93d8 40%, #b39ddb 70%, #ffffff 100%);
+    background-attachment: fixed;
+    padding: 20px;
+    min-height: 100vh; /* Asegura que cubra la altura completa de la pantalla */
+}
+
+header h1,
+.intro h2 {
+    font-family: 'Playfair Display', serif;
 }
 
 

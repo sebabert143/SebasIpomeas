@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // Cuenta regresiva de 5 segundos para la publicidad de Kim
     function startCountdown() {
-        let timeLeft = 1;
+        let timeLeft = 5;
         const countdownInterval = setInterval(function() {
             countdown.textContent = timeLeft;
             timeLeft--;
