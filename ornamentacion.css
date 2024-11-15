@@ -1,0 +1,78 @@
+/* Fondo degradado más intenso */
+body {
+    background: linear-gradient(135deg, #f8bbd0 0%, #ce93d8 40%, #b39ddb 70%, #ffffff 100%);
+    background-attachment: fixed;
+    padding: 20px;
+    color: #333;
+    font-family: 'Playfair Display', serif; /* Asegúrate de tener esta fuente enlazada en el <head> de tu HTML */
+}
+
+/* Estilo para el título principal */
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección de introducción */
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #6a0dad;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+}
+
+

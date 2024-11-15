@@ -1,0 +1,142 @@
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('imagenes/fondo2.webp'); /* Imagen principal */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-family: 'Playfair Display', serif; /* Tipografía que venimos usando */
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  /* Sobre Nosotros */
+  .about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h2 {
+    font-family: 'Playfair Display', serif; /* Tipografía para los títulos */
+    font-size: 2.5rem;
+    color: #6a0dad; /* Color para destacar */
+    margin-bottom: 20px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Historia */
+  .history {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .history-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .history-text {
+    flex: 1;
+  }
+  
+  .history-text h2 {
+    font-family: 'Playfair Display', serif; /* Tipografía para los títulos */
+    font-size: 2.5rem;
+    color: #6a0dad; /* Color para destacar */
+    margin-bottom: 20px;
+  }
+  
+  .history-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Galería */
+  .gallery {
+    padding: 60px 20px;
+    background-color: #f3f3f3;
+    text-align: center;
+  }
+  
+  .gallery h2 {
+    font-family: 'Playfair Display', serif; /* Tipografía para los títulos */
+    font-size: 2rem;
+    color: #6a0dad;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2fc850;
+    color: white;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .about-container,
+    .history-container {
+      flex-direction: column;
+    }
+  }
+  

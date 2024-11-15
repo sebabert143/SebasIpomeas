@@ -1,0 +1,106 @@
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    padding: 
+}
+
+/* Fondo para el Título */
+.header {
+    text-align: center;
+    padding: 60px 20px; /* Espaciado interno del header */
+    background-image: url('imagenes/fondopolinizar.webp'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el header */
+    background-position: center; /* Centra la imagen */
+    color: #fff; /* Color del texto para que sea legible sobre la imagen */
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #000000;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #000;
+}
+
+/* Sección de Pasos */
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-image: url('imagenes/ipofondo.webp'); /* Imagen de fondo solo en los pasos */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: ;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(18, 141, 46, 0.85), rgba(255, 204, 102, 0.85));
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    backdrop-filter: blur(8px);
+}
+
+.step-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000000;
+}
+
+.step-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.step-info h2 {
+    font-size: 1.8em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.step-info p {
+    font-size: 1em;
+    color: #000;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-info {
+        padding: 10px;
+    }
+}
+
+.header-content {
+    background-color: rgba(255, 235, 153, 0.9); /* Fondo color amarillo claro */
+    padding: 50px;
+    border-radius: 30px;
+    display: inline-block;
+}
+

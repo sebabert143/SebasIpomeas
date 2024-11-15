@@ -61,7 +61,7 @@ border-radius: 15px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: ; /* Controla la opacidad aquí, ajusta según lo que desees */
+     /* Controla la opacidad aquí, ajusta según lo que desees */
     z-index: -1; /* Envía el fondo detrás del contenido */
 }
 
@@ -771,6 +771,51 @@ position: absolute;
 
 
 /* carrousel categorias */
+
+/* variedades */
+
+.divvariedades {
+  text-align: center; /* Asegura que el texto dentro del div esté centrado */
+  margin: 0 auto; /* Centra el div en sí mismo */
+  padding: 10px;
+  background-color: transparent; /* Blanco con opacidad del 80% */
+  border-radius: 15px; /* Bordes redondeados */
+  border: none; /* Elimina los bordes */
+  display: inline-block; /* Se adapta al tamaño del contenido */
+}
+
+.variedadescaja {
+  position: relative; /* Necesario para el posicionamiento del pseudoelemento */
+  padding: 20px;
+  z-index: 1;
+  text-align: center;
+
+}
+
+.variedadescaja::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('imagenes/fondookvariedades.png'); /* Ruta de la imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  z-index: -1; /* Envía el fondo detrás del contenido */
+}
+
+.variedadescaja h1 {
+font-family: 'Playfair Display', serif;
+font-weight: 700; /* Puedes ajustar el peso si prefieres un estilo diferente */
+color: #ffffff;
+}
+
+
+
+/* variedades */
 
 
 
