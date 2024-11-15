@@ -41,6 +41,7 @@
         <!-- Formulario de contacto -->
         <div class="form-container">
             <h2>Contactate</h2>
+            <form action="" onsubmit="return enviarCorreo()"></form>
             <div class="form-group">
                 <label for="email">Correo electrónico</label>
                 <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" required>
@@ -57,7 +58,7 @@
                 <label for="mensajeUsuario">Mensaje</label>
                 <textarea class="form-control" id="mensajeUsuario" rows="4" placeholder="Escribe tu mensaje" required></textarea>
             </div>
-            <button class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
         </div>
     </div>
     
