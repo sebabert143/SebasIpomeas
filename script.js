@@ -126,11 +126,25 @@ function enviarEncuesta() {
 
 // final encuesta
 
-// carrousel categorias
 
+// Cargar ideas de ornamentacion desde un archivo JSON
+fetch('ideas.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('ideas-container');
+    data.forEach(idea => {
+      // Crear un div para cada idea
+      const ideaCard = document.createElement('div');
+      ideaCard.className = 'idea-card';
 
+      // Insertar imagen y descripción
+      ideaCard.innerHTML = `
+        <img src="${idea.imagen}" alt="Idea de Ornamentación" class="idea-image">
+        <p class="idea-description">${idea.descripcion}</p>
+      `;
 
-
-
-
-// carrousel categorias
+      // Agregar la tarjeta al contenedor
+      container.appendChild(ideaCard);
+    });
+  })
+  .catch(error => console.error('Error al cargar las ideas de ornamentación:', error));

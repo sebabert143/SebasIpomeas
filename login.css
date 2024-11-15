@@ -1,32 +1,26 @@
 body, html {
   background-image: url('https://jmgvines.com/wp-content/uploads/2014/04/dscn9541.jpg?w=2500&h=');
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
-  
 }
 
 
-.form-group{
-width: 28%;
+.form-group {
+  width: 90%;
+  max-width: 400px;
   margin: auto;
-  padding-top: 150px;
-  
+  padding-top: 100px;
 }
 
 .bg {
-
-  
-  
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  
-  
-
-  }
+  padding: 20px;
+}
 
 
 
@@ -37,8 +31,8 @@ width: 28%;
 }
 
 .error-message {
+  font-size: 0.8rem;
   color: red;
-  font-size: 0.9rem;
   margin-top: 5px;
 }
 
@@ -54,6 +48,17 @@ width: 28%;
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;
+}
+
+#login-button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#login-button:hover {
+  background-color: #4b47d1;
 }
 
 

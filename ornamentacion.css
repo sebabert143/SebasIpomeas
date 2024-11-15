@@ -37,8 +37,9 @@ header h1 {
 /* Galería de imágenes */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta las columnas dinámicamente */
+    gap: 15px; /* Espacio entre las tarjetas */
+    padding: 10px; /* Agrega un poco de margen interno */
 }
 
 .gallery img {
@@ -80,5 +81,29 @@ header h1,
 .intro h2 {
     font-family: 'Playfair Display', serif;
 }
+
+
+
+.idea-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .idea-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .idea-description {
+    font-size: 1rem;
+    color: #333;
+  }
+  
 
 
