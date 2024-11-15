@@ -148,3 +148,59 @@ fetch('ideas.json')
     });
   })
   .catch(error => console.error('Error al cargar las ideas de ornamentación:', error));
+
+
+// carrusel
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const carrusel = document.querySelector(".carrusel");
+    const items = Array.from(document.querySelectorAll(".categoria-item"));
+    const visibleItems = 3; // Cantidad de elementos visibles
+    const itemWidth = items[0].offsetWidth;
+    const gap = parseInt(window.getComputedStyle(carrusel).gap || "0");
+    const totalWidth = itemWidth + gap;
+    let currentIndex = 0;
+
+    // Clonar ítems para bucle infinito
+    items.forEach(item => {
+        const cloneStart = item.cloneNode(true);
+        const cloneEnd = item.cloneNode(true);
+        carrusel.appendChild(cloneStart);
+        carrusel.insertBefore(cloneEnd, carrusel.firstChild);
+    });
+
+    // Posicionar en el centro de los ítems originales
+    carrusel.style.transform = `translateX(${-items.length * totalWidth}px)`;
+
+    function moveCarousel(direction) {
+        carrusel.style.transition = "transform 0.5s ease";
+        currentIndex += direction;
+
+        // Aplicar el movimiento
+        carrusel.style.transform = `translateX(${
+            -((items.length + currentIndex) * totalWidth)
+        }px)`;
+
+        // Verificar si se necesita rebobinar
+        setTimeout(() => handleTransitionEnd(), 500); // Usar un timeout en lugar de `transitionend`
+    }
+
+    function handleTransitionEnd() {
+        carrusel.style.transition = "none";
+        if (currentIndex >= items.length) {
+            currentIndex = 0;
+            carrusel.style.transform = `translateX(${-items.length * totalWidth}px)`;
+        } else if (currentIndex < 0) {
+            currentIndex = items.length - 1;
+            carrusel.style.transform = `translateX(${
+                -((items.length + currentIndex) * totalWidth)
+            }px)`;
+        }
+    }
+
+    document.querySelector(".izquierda").addEventListener("click", () => moveCarousel(-1));
+    document.querySelector(".derecha").addEventListener("click", () => moveCarousel(1));
+});
+
+// carrusel
+

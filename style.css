@@ -114,25 +114,51 @@ border-radius: 15px;
 
 
 .carousel-caption h5 {
-  font-size: 4rem; 
-  font-weight: bold; 
-  color: #ffffff; 
-  border-radius: 15px; 
-  background-color: rgba(0, 0, 0, 0.4); 
-  padding: 10px; 
-  display: inline-block; 
-  
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .carousel-caption p {
-  font-size: 1.5rem; 
-  font-weight: bold; 
-  color: #ffffff; 
-  border-radius: 15px; 
-  background-color: rgba(0, 0, 0, 0.4); 
-  padding: 10px; 
-  display: inline-block; 
-  
+  font-size: 1rem;
+}
+
+.carousel {
+  max-width: 100%;
+  margin: auto;
+}
+
+.carousel-item img {
+  height: auto;
+  max-height: 500px; /* Limita la altura máxima en pantallas grandes */
+  object-fit: cover; /* Asegura que la imagen no se distorsione */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para texto */
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 90%; /* Ajusta el ancho máximo */
+  margin: 0 auto; /* Centra el texto */
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+      font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+      display: none; /* Ocultar los párrafos en pantallas pequeñas */
+  }
+
+  .carousel-caption {
+      text-align: center;
+      padding: 1rem;
+  }
+
+  .carousel-item img {
+      height: auto; /* Asegura que las imágenes sean responsive */
+  }
 }
 
 
