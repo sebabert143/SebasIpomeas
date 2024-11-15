@@ -440,7 +440,7 @@ position: absolute;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para realce */
 }
 
-.close {
+.close .hidden {
   position: absolute;
   top: 10px; /* Más cercano al contenido */
   right: 10px; /* Más cercano al contenido */
