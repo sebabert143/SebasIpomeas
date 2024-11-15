@@ -230,9 +230,11 @@ background-color: #fff;
   margin: 20px;
   border-radius: 16px;
   padding: 0.5rem;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más fuerte */
   
 
   }
+  
   
 .navbar-brand {
   font-weight: 500;
@@ -272,6 +274,7 @@ box-shadow: none;
 }
 
 .nav-link {
+  font-family: 'Playfair Display', serif;
 color: #666777;
   font-weight: 500;
   position: relative;
@@ -279,7 +282,7 @@ color: #666777;
   }
 
 .nav-link:hover, .nav-link.active {
-  color: #000;
+  color: #000000;
 
 }
 

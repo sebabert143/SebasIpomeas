@@ -18,55 +18,57 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="footer.css">
     
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="contacto.css" rel="stylesheet" type="text/css">
+   
 </head>
 
       
-<body>
+<body class="contacto-body">
     <!-- Navbar -->
       <div id="navbar-placeholder"></div>
-      <!-- end Navbar -->
-    <div class="containerseba mt-5">
-        <div class="row">
-            <!-- Imagen decorativa -->
-            <div class="col-md-6">
-                <img src="imagenes/fondopolinizar.webp" alt="Flores de ipomeas" class="img-fluid rounded shadow">
+      <!-- end Navbar --> 
+      <br>
+      <br>
+      <br>
+      <div class="containerseba mt-5">
+        <!-- Imagen decorativa -->
+        <div>
+            <img src="imagenes/fondopolinizar.webp" alt="Flores de ipomeas" class="img-fluid">
+        </div>
+    
+        <!-- Formulario de contacto -->
+        <div class="form-container">
+            <h2>Contactate</h2>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" required>
             </div>
-
-            <!-- Formulario de contacto -->
-            <div class="col-md-6">
-                <h2 class="text-center mb-4">Contáctanos</h2>
-                <form action="" onsubmit="return enviarCorreo()">
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="nombreUsuario">Nombre</label>
-                        <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="apellidoUsuario">Apellido</label>
-                        <input type="text" class="form-control" id="apellidoUsuario" placeholder="Apellido" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensajeUsuario">Mensaje</label>
-                        <textarea class="form-control" id="mensajeUsuario" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-                </form>
+            <div class="form-group">
+                <label for="nombreUsuario">Nombre</label>
+                <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre" required>
             </div>
+            <div class="form-group">
+                <label for="apellidoUsuario">Apellido</label>
+                <input type="text" class="form-control" id="apellidoUsuario" placeholder="Apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="mensajeUsuario">Mensaje</label>
+                <textarea class="form-control" id="mensajeUsuario" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <button class="btn btn-primary">Enviar</button>
         </div>
     </div>
+    
 
           <!-- Footer -->
   <div id="footer-placeholder">
     
   </div>
 
-    <script src="scriptcontacto.js"></script>
-    <script src="script.js"></script>
-    <script src="ipomea.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scriptcontacto.js"></script>
+  <script src="ipomea.js"></script>
 </body>
 </html>

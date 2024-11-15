@@ -1,34 +1,89 @@
 body {
-    background-image: url('imagenes/ipomeaindica.png');
+    background: url('imagenes/ipomeaindica.png') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #333;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+/* Contenedor principal */
+.containerseba {
+    display: flex;
+    flex-wrap: wrap; /* Permite apilar los elementos en pantallas pequeñas */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 20px; /* Espaciado entre elementos */
+    margin: 40px auto; /* Centra el contenedor */
+    padding: 20px;
+    max-width: 1200px; /* Limita el ancho máximo */
+    background: rgba(255, 255, 255, 0.7); /* Transparencia blanca */
+    backdrop-filter: blur(10px); /* Efecto difuminado */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+/* Imagen decorativa */
+.img-fluid {
+    width: 100%;
+    max-width: 522px; /* Limita el tamaño en pantallas grandes */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Evita distorsión */
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
-    color: #6c63ff;
-    font-weight: bold;
+/* Formulario */
+.form-container {
+    width: 100%;
+    max-width: 500px; /* Limita el ancho del formulario */
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.btn-primary {
+.form-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container .form-group {
+    margin-bottom: 15px;
+}
+
+.form-container .btn-primary {
+    width: 100%;
     background-color: #6c63ff;
     border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
+.form-container .btn-primary:hover {
     background-color: #574fba;
 }
 
-.img-fluid {
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+/* Responsivo */
+@media (max-width: 768px) {
+    .containerseba {
+        flex-direction: column; /* Los elementos se apilan */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .img-fluid {
+        max-width: 100%; /* La imagen ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Espacio entre la imagen y el formulario */
+    }
+
+    .form-container {
+        margin: 0 auto; /* Centra el formulario */
+    }
 }
+
+
+
+
+
