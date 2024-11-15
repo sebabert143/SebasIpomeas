@@ -17,9 +17,12 @@
 }
 
 .footer-description {
-    font-size: 1rem;
-    color: #ccc;
-    margin-top: 10px;
+    font-family: 'Playfair Display', serif; /* Aplica la tipografía de los h1 */
+    font-size: 1.rem; /* Ajusta el tamaño según prefieras */
+    font-weight: 100; /* Ajusta el peso de la fuente */
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .footer h6 {
@@ -81,6 +84,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer h6 {
+    font-family: 'Playfair Display', serif; /* Cambia a la fuente deseada */
+    font-weight: 700; /* Ajusta el peso de la fuente si es necesario */
+    color: #ffc107;
     margin-bottom: 15px;
 }
 
